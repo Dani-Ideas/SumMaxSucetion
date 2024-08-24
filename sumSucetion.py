@@ -1,12 +1,10 @@
-#este es un cometario
-print("Hello word")
-x =4 
-y = "Frank"
-print(type(x))
-print(type(y))
 def get_Sum(coordinate,matrix2D):
   #Funcion para obtener los numeros de la suma Maxima
-
+  listSumOutput =[]
+  for i in range(coordinate[1],coordinate[0]+1,1):
+      listSumOutput.append(matrix2D[i][i])
+      print(matrix2D[i][i])
+  return listSumOutput
 
 def set_all_sum (matrix):
    #Funcion para obtener las sumas
@@ -63,6 +61,7 @@ def main():
         fill_diagonal(matrix2D, lista)
         coordinate= set_all_sum(matrix2D)
         print_matrix(matrix2D)
-        get_Sum(coordinate,matrix2D)
+        listSum=get_Sum(coordinate,matrix2D)
+        print(listSum)
 if __name__ == "__main__":
     main()
