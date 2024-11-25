@@ -18,6 +18,7 @@ def set_all_sum (matrix):
              coordinate [0] = i
              coordinate [1] = j
    return coordinate
+
 def get_integer_input(prompt):
     #Función para obtener un número entero del usuario con validación.
     n = input(prompt)
